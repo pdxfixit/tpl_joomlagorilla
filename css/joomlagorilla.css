@@ -1,0 +1,28 @@
+/* Joomla Gorilla */		
+@font-face {
+    font-family: 'Aragon';
+    src: url('fonts/22FF48_0_0.eot');
+    src: url('fonts/22FF48_0_0.eot?#iefix') format('embedded-opentype'),
+    url('fonts/22FF48_0_0.woff') format('woff'),
+    url('fonts/22FF48_0_0.ttf') format('truetype');
+}
+
+/* Sorry, RocketTheme... */
+#rocket { display: none; }
+
+/* Logo */
+a#rt-logo { background: url('../images/logo/joomlagorilla.png') 0 0 no-repeat; height: 200px; width: 152px; }
+div.jg-title div.rt-block { padding: 50px 47px 0 0; }
+div.custom.jg-title h1 { color: red; font-family: Aragon, serif; font-size: 33px; font-weight: normal; letter-spacing: 0; line-height: 47px; margin: 0; text-align: right; }
+
+/* Top Menu */
+div#rt-header div.rt-omega div.rt-block { height: 200px; }
+div#rt-header div.rt-omega div.rt-block ul.menu { -webkit-box-shadow: 2px 2px 2px 0px silver; border: silver solid 1px; border-radius: 5px; box-shadow: 2px 2px 2px 0px silver; list-style: none; padding: 0; position: absolute; right: 25%; top: 47%; }
+div#rt-header div.rt-omega div.rt-block ul.menu li { float: left; margin: 5px; }
+div#rt-header div.rt-omega div.rt-block ul.menu li a span { color: red; margin: 0 10px; }
+
+/*
+ * Positions
+ */
+
+/* Header */

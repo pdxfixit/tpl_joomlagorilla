@@ -19,7 +19,7 @@
         <field name="master" type="hidden" value="false" default="true"/>
         <field name="current_id" type="hidden" value="false" default="true"/>
         <field name="gantry" type="gantry" value="" panel_position="hiddens"/>
-        <field name="template_full_name" type="hidden" default="Gantry Template"/>
+        <field name="template_full_name" type="hidden" default="Joomla Gorilla Template"/>
         <!--<field name="diagnostic" type="diagnostic" panel_position="right" show_label="false" />-->
         <!--<field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false"/>-->
         <field name="grid_system" type="hidden" default="12"/>
@@ -42,19 +42,19 @@
             <option value="style3">Style 3</option>
             <option value="style4">Style 4</option>
         </field>
-        <field name="bgcolor" type="colorchooser" default="#dddddd" label="BG_COLOR" setinsession="true"
+        <field name="bgcolor" type="colorchooser" default="#ffffff" label="BG_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
-        <field name="headercolor" type="colorchooser" default="#111111" label="HEADER_COLOR" setinsession="true"
+        <field name="headercolor" type="colorchooser" default="#ffffff" label="HEADER_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
-        <field name="bottomcolor" type="colorchooser" default="#111111" label="BOTTOM_COLOR" setinsession="true"
+        <field name="bottomcolor" type="colorchooser" default="#ffffff" label="BOTTOM_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
-        <field name="footercolor" type="colorchooser" default="#666666" label="FOOTER_COLOR" setinsession="true"
+        <field name="footercolor" type="colorchooser" default="#ffffff" label="FOOTER_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
-        <field name="linkcolor" type="colorchooser" default="#cc0000" label="LINK_COLOR" setinsession="true"
+        <field name="linkcolor" type="colorchooser" default="#000000" label="LINK_COLOR" setinsession="true"
                setbysession="true" setincookie="true" setbycookie="true"/>
 
         <fields name="webfonts" type="chain" label="WEBFONTS">
@@ -155,9 +155,9 @@
         </fields>
 
         <fields name="copyright" type="chain" label="COPYRIGHT">
-            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
             <field name="position" type="position" translation="false" default="copyright" label="POSITION"/>
-            <field name="text" type="text" default="Designed by RocketTheme" label="" class="text-long"/>
+            <field name="text" type="text" default="Copyright (c) 2012, Joomla Gorilla" label="" class="text-long"/>
         </fields>
 
         <fields name="smartload" type="chain" labeel="SMARTLOAD">
@@ -168,7 +168,7 @@
         </fields>
 
         <fields name="totop" type="chain" label="TOTOP">
-            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
             <field name="position" type="position" translation="false" default="copyright" label="POSITION"/>
             <field name="text" type="text" default="Scroll to Top" label="" class="text-long"/>
         </fields>
@@ -204,11 +204,11 @@
         </field>
 		<field name="menutips" type="tips" tab="menu" panel_position="right" show_label="false"/>
         <fields name="menu" type="selectedset" label="MENU_CTRL">
-            <field name="enabled" type="toggle" default="1" label="SHOW" enabler="true" />
+            <field name="enabled" type="toggle" default="0" label="SHOW" enabler="true" />
             <field name="type" type="selectbox" selector="true" default="fusionmenu" label="TYPE" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
             <fields type="set" name="fusionmenu" label="FUSION">
                 <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" />
-                <field name="position" type="position" translation="false" default="header-b" label="POSITION" />
+                <field name="position" type="position" translation="false" default="navigation" label="POSITION" />
                 <field name="enable_js" type="toggle" default="1" label="ENABLE_JS" />
                 <field name="opacity" type="text" default="1" label="MENU_OPACITY" class="text-short" />
                 <field name="effect" type="selectbox" default="slidefade" label="MENU_EFFECT">
@@ -276,7 +276,7 @@
         </fields>
 
         <fields name="header" type="position" label="HEADER_POS">
-            <field name="layout" type="positions" default="3,3,3,3" label="">
+            <field name="layout" type="positions" default="2,2,8" label="">
                 <schemas>1,2,3,4,5,6</schemas>
                 <words>2,3,4,5,6,7,8,9,10</words>
             </field>
@@ -576,7 +576,7 @@
         <field name="advancedtips" type="tips" tab="advanced" panel_position="right" show_label="false"/>
 
         <fields name="cache" type="chain" label="GANTRY_CACHE" setinoverride="false">
-            <field name="enabled" type="toggle" default="1" label="ENABLED" setinoverride="false"/>
+            <field name="enabled" type="toggle" default="0" label="ENABLED" setinoverride="false"/>
             <field name="time" type="text" default="900" label="CACHE_TIME" class="text-short" setinoverride="false"/>
         </fields>
 
@@ -603,7 +603,7 @@
 
         <field name="buildspans-enabled" type="toggle" default="1" label="TITLESPANS"/>
 
-        <field name="pagesuffix-enabled" type="toggle" default="0" label="PAGESUFFIX"/>
+        <field name="pagesuffix-enabled" type="toggle" default="1" label="PAGESUFFIX"/>
 
         <fields name="inactive" type="chain" label="INACTIVE" setinoverride="false">
             <field name="enabled" type="toggle" default="1" label="ENABLED" setinoverride="false"/>
