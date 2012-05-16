@@ -10,19 +10,41 @@
 /* Sorry, RocketTheme... */
 #rocket { display: none; }
 
+/* General */
+.clear, .clr { clear: both; }
+
 /* Logo */
-a#rt-logo { background: url('../images/logo/joomlagorilla.png') 0 0 no-repeat; height: 200px; width: 152px; }
+a#rt-logo { background: url('../images/logo/joomlagorilla.png') 0 0 no-repeat; height: 200px; margin-top: 5px; width: 152px; }
 div.jg-title div.rt-block { padding: 50px 47px 0 0; }
 div.custom.jg-title h1 { color: red; font-family: Aragon, serif; font-size: 33px; font-weight: normal; letter-spacing: 0; line-height: 47px; margin: 0; text-align: right; }
 
 /* Top Menu */
-div#rt-header div.rt-omega div.rt-block { height: 200px; }
-div#rt-header div.rt-omega div.rt-block ul.menu { -webkit-box-shadow: 2px 2px 2px 0px silver; border: silver solid 1px; border-radius: 5px; box-shadow: 2px 2px 2px 0px silver; list-style: none; padding: 0; position: absolute; right: 25%; top: 47%; }
-div#rt-header div.rt-omega div.rt-block ul.menu li { float: left; margin: 5px; }
-div#rt-header div.rt-omega div.rt-block ul.menu li a span { color: red; margin: 0 10px; }
+div.rt-menubar { height: 200px; }
+div.rt-menubar ul.menutop { -webkit-box-shadow: 2px 2px 2px 0px silver; border: silver solid 1px; border-radius: 5px; box-shadow: 2px 2px 2px 0px silver; list-style: none; padding: 0; position: absolute; right: 65px; top: 47%; }
+div.rt-menubar ul.menutop li.root { float: left; margin: 5px; }
+div.rt-menubar ul.menutop li.root a.item { height: auto; }
+div.rt-menubar ul.menutop li.root a.item:hover { background-color: transparent; }
+div.rt-menubar ul.menutop li.root a.item span { color: red; font-size: 14px; line-height: normal; margin: 0 10px; padding: 0; }
 
 /*
  * Positions
  */
-
+ 
 /* Header */
+div#rt-header div.rt-block { padding-bottom: 0; margin-bottom: 0; }
+
+/* Copyright */
+div#rt-copyright div.rt-grid-12.rt-alpha.rt-omega div.rt-block { color: #333; margin: 0; padding: 0 15px; text-align: left; }
+div#rt-copyright div.rt-grid-12.rt-alpha.rt-omega div.rt-block p { font-size: 10px; line-height: 16px; }
+div#rt-copyright div.rt-grid-12.rt-alpha.rt-omega div.rt-block #jg-social { float: right; }
+
+/*
+ * Pages
+ */
+ 
+ /* Home Page */
+ div#jg-home { margin: -37px 5px 0; }
+ div#jg-home div { -webkit-box-shadow: 2px 2px 2px 0px silver; border: silver solid 1px; border-radius: 5px; box-shadow: 2px 2px 2px 0px silver; float: left; height: 200px; margin: 49px; position: relative; text-align: center; width: 200px; }
+ div#jg-home div p { position: absolute; top: 42%; width: 100%; }
+ 
+ 
